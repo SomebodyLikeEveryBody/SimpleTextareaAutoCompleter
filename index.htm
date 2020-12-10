@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Basic autoCompleter example</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="Calculator to do calculations" />
+  <meta name="author" content="Victor Vague, R0b and Stef" />
+  <link rel="stylesheet" type="text/css" href="./autoCompleter.css" />
+ </head>
+ <body>
+  <textarea id="input" style="width: 100%; height: 500px; background-color: lightblue;"></textarea>
+  <script type="text/javascript" src="./jquery-3.5.1.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./textareaCaretPosition.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./autoCompleterKeywords.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./autoCompleter.js" charset="utf-8"></script>
+  <script>
+      let auto = new AutoCompleter(window.document.querySelector('textarea'), g_list);
+  </script>
+ </body>
+</html>
